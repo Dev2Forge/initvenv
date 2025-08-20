@@ -6,4 +6,4 @@ Is a Open Source program CLI to create, install and activate Virtual Environment
 
 ---
 
-{% include profile.md title='{{site.AUTHOR}}' alt='{{ALT_PROFILE_TRG}}' img='{{site.IMG_PROFILE}}' %}
+{% include profile.md title=site.AUTHOR alt=ALT_PROFILE_TRG img=site.IMG_PROFILE %}
