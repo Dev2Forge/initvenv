@@ -1,7 +1,11 @@
 # Download {{site.PROJECT_NAME}}
 
 <div>
-    <a href="https://github.com/Dev2Forge/Init-Venv/releases/" class="btn">win-x64</>
+    <a href="https://github.com/Dev2Forge/Init-Venv/releases/" class="btn">win-x64</a>
 </div>
 
-<img width="200" src="https://private-user-images.githubusercontent.com/108991712/477232365-8b4243a0-4c83-4956-b5e6-7a02d92135bb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2NTY1MTMsIm5iZiI6MTc1NTY1NjIxMywicGF0aCI6Ii8xMDg5OTE3MTIvNDc3MjMyMzY1LThiNDI0M2EwLTRjODMtNDk1Ni1iNWU2LTdhMDJkOTIxMzViYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyMFQwMjE2NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mODYxOTRiY2MwZjI1ZTgzNjQxMTA3YTNjYjczOGVlMTlhZWY1MTc1MTBlMWY2MWVmNzMyMWRmZjFkZGZmNmI2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.iebzXh7uqcJ0XfPnSDqFsYBy5JabKfcCfil9TiJkzAA" alt="Init venv preview 1">
+<img width="200" src="https://github.com/user-attachments/assets/7e5edffb-4ddc-41df-abe8-b77e88162f61" alt="Init venv preview 1">
+
+---
+
+{% include profile.md title="{{site.AUTHOR}}" alt={{ALT_PROFILE_TRG}} img={{site.IMG_PROFILE}} %}

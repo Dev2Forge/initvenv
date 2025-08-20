@@ -2,6 +2,9 @@
 theme: jekyll-theme-minimal
 
 # Project Variables
-
 PROJECT_NAME: "Init Venv"
 AUTHOR: "Tutos Rive"
+
+# Components variables
+ALT_PROFILE_TRG: "Github Phot Profile of Tutos Rive"
+IMG_PROFILE: "https://avatars.githubusercontent.com/u/108991712?v=4"

@@ -1,0 +1,1 @@
+<img src="{{includes.img}}" alt="{{includes.alt}}" title="{{includes.title}}">
