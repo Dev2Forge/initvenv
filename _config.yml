@@ -1,14 +1,14 @@
 # Configs
-# theme: jekyll-theme-minimal
-# theme: jekyll-theme-console
-
-remote_theme: b2a3e8/jekyll-theme-console
-style: dark
+theme: minima
 
 # Project Variables
 PROJECT_NAME: "Init Venv"
 AUTHOR: "Tutos Rive"
+FAVICON: "/assets/initvenv.ico"
 
 # Components variables
 ALT_PROFILE_TRG: "Github Phot Profile of Tutos Rive"
-IMG_PROFILE: "https://avatars.githubusercontent.com/u/108991712?v=4"
+IMG_PROFILE: "/assets/me1.jpeg"
+
+plugins:
+  - jekyll-seo-tag

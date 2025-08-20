@@ -1,3 +1,5 @@
+<link rel="shortcut icon" type="image/x-icon" href="{{site.FAVICON}}">
+
 # Init Venv
 
 [Download](./view/download) - [About](./view/about)
