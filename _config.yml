@@ -2,13 +2,15 @@
 theme: minima
 
 # Project Variables
+url: "https://tutosrive.github.io"
+baseurl: "/initvenv"
 PROJECT_NAME: "Init Venv"
 AUTHOR: "Tutos Rive"
-FAVICON: "./assets/initvenv.ico"
+FAVICON: "/assets/initvenv.ico"
 
 # Components variables
 ALT_PROFILE_TRG: "Github Phot Profile of Tutos Rive"
-IMG_PROFILE: "./assets/me1.jpeg"
+IMG_PROFILE: "/assets/me1.jpeg"
 
 plugins:
   - jekyll-seo-tag

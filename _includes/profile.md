@@ -1,1 +1,1 @@
-<img src="{{include.img}}" alt="{{include.alt}}" title="{{include.title}}">
+<img src="{{include.img | relative_url}}" alt="{{include.alt}}" title="{{include.title}}">
