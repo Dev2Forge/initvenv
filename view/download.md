@@ -1,4 +1,4 @@
-# Download {{site.PROJECT_NAME}}
+# Download
 
 <div>
     <a href="https://github.com/Dev2Forge/Init-Venv/releases/" class="btn">win-x64</a>
