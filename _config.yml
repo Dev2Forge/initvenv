@@ -1,1 +1,7 @@
-theme: jekyll-theme-minimal
+# Configs
+theme: jekyll-theme-minialist
+
+# Project Variables
+
+PROJECT_NAME: "Init Venv"
+AUTHOR: "Tutos Rive"
