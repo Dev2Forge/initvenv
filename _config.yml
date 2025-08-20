@@ -1,6 +1,9 @@
 # Configs
 # theme: jekyll-theme-minimal
-theme: jekyll-theme-console
+# theme: jekyll-theme-console
+
+remote_theme: b2a3e8/jekyll-theme-console
+style: dark
 
 # Project Variables
 PROJECT_NAME: "Init Venv"
