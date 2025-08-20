@@ -1,6 +1,6 @@
 # Configs
 # theme: jekyll-theme-minimal
-theme: jekyll-theme-moonwalk
+theme: jekyll-theme-console
 
 # Project Variables
 PROJECT_NAME: "Init Venv"
