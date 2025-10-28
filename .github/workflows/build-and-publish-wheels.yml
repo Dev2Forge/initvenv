@@ -65,9 +65,13 @@ jobs:
       - name: Rename wheel to platform tag
         shell: pwsh
         run: |
-          $wheel = Get-ChildItem dist\*.whl | Select-Object -First 1
-          $newName = $wheel.Name -replace "py3-none-any", "py3-none-${{ matrix.plat_tag }}"
-          Rename-Item $wheel.FullName "dist\$newName"
+          $w = Get-ChildItem -Path dist -Filter "*.whl" | Select-Object -Last 1
+          if (-not $w) { throw "Wheel not found in dist/ after build" }
+          $old = $w.Name
+          $new = $old -replace 'py3-none-any', "py3-none-${{ matrix.plat_tag }}"
+          Write-Host "Renaming $old -> $new"
+          # Use -Path / -NewName form to avoid path/device rename errors
+          Rename-Item -Path $w.FullName -NewName $new
 
       - name: Publish wheel to PyPI
         env:
