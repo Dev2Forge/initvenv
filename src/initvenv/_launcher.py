@@ -11,7 +11,7 @@ def main():
     """
 
     if not platform.system().lower().startswith("win"):
-        print(f"Próximamente funcionará en esta plataforma {platform.system()}")
+        print(f"This platform {platform.system()} is coming soon!")
         return 0
 
     # Prevent recursive re-invocation
@@ -49,7 +49,7 @@ def main():
             subprocess.run(argv, check=True, env=env)
             return 0
         except subprocess.CalledProcessError as e:
-            print(f"Error ejecutando {bat}: {e}", file=sys.stderr)
+            print(f"Error executing {bat}: {e}", file=sys.stderr)
             return e.returncode
 
     if exe.exists():
@@ -59,7 +59,7 @@ def main():
             subprocess.run(argv, check=True, env=env)
             return 0
         except subprocess.CalledProcessError as e:
-            print(f"Error ejecutando {exe}: {e}", file=sys.stderr)
+            print(f"Error executing {exe}: {e}", file=sys.stderr)
             return e.returncode
 
     print("Error: neither initvenv.bat nor initvenv.exe were found in package scripts/", file=sys.stderr)
