@@ -1,6 +1,8 @@
 name: bohr.io deploy
 on: 
   push:
+    branches:
+      - 'web'
   repository_dispatch:
     types: [bohr-dispatch]
 permissions: write-all
