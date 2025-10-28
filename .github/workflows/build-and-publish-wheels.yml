@@ -29,18 +29,28 @@ jobs:
           python-version: "3.10"
 
       - name: Prepare scripts directory
+        shell: cmd
         run: |
-          echo "Verificando archivo .bat..."
-          if not exist "scripts\initvenv.bat" (
-            echo "Error: No se encontró scripts\initvenv.bat"
+          echo Verificando archivo .bat en src\initvenv\scripts...
+          if not exist "src\initvenv\scripts\initvenv.bat" (
+            echo Error: No se encontró src\initvenv\scripts\initvenv.bat
             exit 1
+          ) else (
+            echo ✓ src\initvenv\scripts\initvenv.bat encontrado
           )
 
-          echo "Copiando .exe de src\bin\${{ matrix.folder }}"
-          if exist "src\bin\${{ matrix.folder }}\initvenv.exe" (
-            copy "src\bin\${{ matrix.folder }}\initvenv.exe" "scripts\initvenv.exe"
+          rem Limpia cualquier initvenv.exe anterior en el paquete
+          if exist "src\initvenv\scripts\initvenv.exe" (
+            del /Q "src\initvenv\scripts\initvenv.exe"
+            echo Eliminado initvenv.exe previo en src\initvenv\scripts
+          )
+
+          echo Copiando .exe desde src\initvenv\bin\${{ matrix.folder }}
+          if exist "src\initvenv\bin\${{ matrix.folder }}\initvenv.exe" (
+            copy /Y "src\initvenv\bin\${{ matrix.folder }}\initvenv.exe" "src\initvenv\scripts\initvenv.exe"
+            echo ✓ Copiado initvenv.exe a src\initvenv\scripts\initvenv.exe
           ) else (
-            echo "Error: no se encontró src\bin\${{ matrix.folder }}\initvenv.exe"
+            echo Error: no se encontró src\initvenv\bin\${{ matrix.folder }}\initvenv.exe
             exit 1
           )
 
@@ -55,9 +65,24 @@ jobs:
       - name: Rename wheel to platform tag
         shell: pwsh
         run: |
-          $wheel = Get-ChildItem dist\*.whl | Select-Object -First 1
-          $newName = $wheel.Name -replace "py3-none-any", "py3-none-${{ matrix.plat_tag }}"
-          Rename-Item $wheel.FullName "dist\$newName"
+          # Selecciona el wheel más reciente en dist/
+          $w = Get-ChildItem -Path dist -Filter "*.whl" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+          if (-not $w) { throw "Wheel not found in dist/ after build" }
+
+          $old = $w.Name
+          $plat = "${{ matrix.plat_tag }}"
+
+          # Si el filename contiene 'py3-none-any', reemplázalo; si no, inserta el tag antes de la extensión
+          if ($old -match 'py3-none-any') {
+            $new = $old -replace 'py3-none-any', "py3-none-$plat"
+          } else {
+            $base = [System.IO.Path]::GetFileNameWithoutExtension($old)
+            $ext = [System.IO.Path]::GetExtension($old)
+            $new = "$base-$plat$ext"
+          }
+
+          Write-Host "Renaming $old -> $new"
+          Rename-Item -Path $w.FullName -NewName $new
 
       - name: Publish wheel to PyPI
         env:
