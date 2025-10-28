@@ -34,7 +34,7 @@ def main():
 
     if bat.exists():
         # On Windows run the .bat through cmd.exe so associations work
-        cmd = "cmd.exe" # os.environ.get("COMSPEC", "cmd.exe")
+        cmd = os.environ.get("COMSPEC", "cmd.exe") # "cmd.exe" # os.environ.get("COMSPEC", "cmd.exe")
         args = [cmd, "/c", str(bat)] + sys.argv[1:]
         os.execv(cmd, args)
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "initvenv"
-version = "0.1.0a8"
+version = "0.1.0a9"
 description = "Test InitVenv package. Currently available as a standalone executable at https://github.com/Dev2Forge/Init-Venv/releases."
 readme = { file = "README.md", content-type = "text/markdown", charset = "utf-8" }
 license = "GPL-3.0"
