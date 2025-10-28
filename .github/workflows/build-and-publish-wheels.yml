@@ -65,12 +65,23 @@ jobs:
       - name: Rename wheel to platform tag
         shell: pwsh
         run: |
-          $w = Get-ChildItem -Path dist -Filter "*.whl" | Select-Object -Last 1
+          # Selecciona el wheel más reciente en dist/
+          $w = Get-ChildItem -Path dist -Filter "*.whl" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
           if (-not $w) { throw "Wheel not found in dist/ after build" }
+
           $old = $w.Name
-          $new = $old -replace 'py3-none-any', "py3-none-${{ matrix.plat_tag }}"
+          $plat = "${{ matrix.plat_tag }}"
+
+          # Si el filename contiene 'py3-none-any', reemplázalo; si no, inserta el tag antes de la extensión
+          if ($old -match 'py3-none-any') {
+            $new = $old -replace 'py3-none-any', "py3-none-$plat"
+          } else {
+            $base = [System.IO.Path]::GetFileNameWithoutExtension($old)
+            $ext = [System.IO.Path]::GetExtension($old)
+            $new = "$base-$plat$ext"
+          }
+
           Write-Host "Renaming $old -> $new"
-          # Use -Path / -NewName form to avoid path/device rename errors
           Rename-Item -Path $w.FullName -NewName $new
 
       - name: Publish wheel to PyPI
