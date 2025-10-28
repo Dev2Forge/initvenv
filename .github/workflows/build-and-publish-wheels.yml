@@ -29,18 +29,19 @@ jobs:
           python-version: "3.10"
 
       - name: Prepare scripts directory
+        shell: cmd
         run: |
-          echo "Verificando archivo .bat..."
+          echo Verificando archivo .bat...
           if not exist "scripts\initvenv.bat" (
-            echo "Error: No se encontró scripts\initvenv.bat"
+            echo Error: No se encontró scripts\initvenv.bat
             exit 1
           )
 
-          echo "Copiando .exe de src\bin\${{ matrix.folder }}"
+          echo Copiando .exe de src\bin\${{ matrix.folder }}
           if exist "src\bin\${{ matrix.folder }}\initvenv.exe" (
             copy "src\bin\${{ matrix.folder }}\initvenv.exe" "scripts\initvenv.exe"
           ) else (
-            echo "Error: no se encontró src\bin\${{ matrix.folder }}\initvenv.exe"
+            echo Error: no se encontró src\bin\${{ matrix.folder }}\initvenv.exe
             exit 1
           )
 
