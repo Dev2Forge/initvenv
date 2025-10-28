@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=67.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "initvenv"
+version = "0.1.0a5"
+description = "Test InitVenv package. Currently available as a standalone executable at https://github.com/Dev2Forge/Init-Venv/releases."
+readme = { file = "README.md", content-type = "text/markdown", charset = "utf-8" }
+license = "GPL-3.0"
+authors = [{ name = "Dev2Forge", email = "support@dev2forge.software" }]
+maintainers = [{ name = "tutosrive", email = "tutosriveorg@gmail.com" }]
+
+keywords = [
+    "initvenv",
+    "auto-venv",
+    "instant-setup",
+    "zero-config",
+    "python-bootstrap",
+    "one-command",
+    "venv-creator",
+    "dev-automation",
+    "fast-python-start",
+    "project-starter"
+]
+
+requires-python = ">=3.7"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Utilities",
+    "Topic :: System :: Installation/Setup",
+    "Programming Language :: C#",
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X"
+]
+
+[project.urls]
+Homepage = "https://github.com/Dev2Forge/Init-Venv"
+Repository = "https://github.com/Dev2Forge/Init-Venv"
+Issues = "https://github.com/Dev2Forge/Init-Venv/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = { find = { where = ["src"] } }
+
+[tool.setuptools.package-data]
+initvenv = [
+    "scripts/initvenv.bat"
+]
+
+[project.scripts]
+initvenv = "initvenv.bat"
