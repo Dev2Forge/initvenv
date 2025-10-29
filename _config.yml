@@ -30,7 +30,7 @@ plugins:
  - jekyll-seo-tag
 
 minima:
-  skin: auto
+  skin: dark
 
 social_links:
     - title: Init Venv - Pypi Version
