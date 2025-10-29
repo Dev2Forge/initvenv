@@ -8,9 +8,18 @@ PROJECT_NAME: "Init Venv"
 AUTHOR: "Tutos Rive"
 FAVICON: "/assets/initvenv.ico"
 
+# Analitycs
+jekyll_analytics:
+  GoogleAnalytics:
+    id: "G-NJCY8HWJT2"
+    anonymizeIp: true
+    async: true
+
+
 # Components variables
 ALT_PROFILE_TRG: "Github Phot Profile of Tutos Rive"
 IMG_PROFILE: "/assets/me1.jpeg"
 
 plugins:
   - jekyll-seo-tag
+  - jekyll_analytics
