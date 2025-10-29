@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "initvenv"
-version = "0.1.0"
+version = "0.1.1"
 description = "Cross-language CLI tool written in C# to initialize Python virtual environments instantly with one command: 'initvenv'."
 readme = { file = "README.md", content-type = "text/markdown", charset = "utf-8" }
 license = "GPL-3.0"
@@ -41,7 +41,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Dev2Forge/initvenv"
+Homepage = "https://www.dev2forge.software/initvenv/"
 Repository = "https://github.com/Dev2Forge/initvenv"
 Issues = "https://github.com/Dev2Forge/initvenv/issues"
 Download = "https://sourceforge.net/projects/Init-Venv/"
