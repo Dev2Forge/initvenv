@@ -4,7 +4,7 @@ layout: page
 permalink: /
 title: Home
 ---
-[Watch Posts](/posts)
+[Watch Posts](/initvenv/posts)
 <h1>InitVenv<sub>
     <small class="so-small text-info">pypi version</small>
   </sub>
