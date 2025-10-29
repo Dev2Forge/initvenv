@@ -150,7 +150,7 @@ See the [Release Notes](https://github.com/Dev2Forge/Init-Venv/releases) for det
 
 ## License
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](https://github.com/Dev2Forge/initvenv/LICENSE) file for details.
 
 ## Links
 
