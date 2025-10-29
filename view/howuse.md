@@ -1,4 +1,8 @@
-## How Use
+---
+layout: page
+title: How to Use
+permalink: /view/howto
+---
 
 ### Method 1: Windows File Explorer (Recommended)
 

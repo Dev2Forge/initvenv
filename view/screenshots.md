@@ -1,4 +1,8 @@
-## Screenshots
+---
+layout: page
+title: Screenshots
+permalink: /view/screenshots
+---
 
 | Scenario | Preview |
 | :------- | :------ |

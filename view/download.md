@@ -1,4 +1,8 @@
-# Download
+---
+layout: page
+title: Download
+permalink: /view/download
+---
 
 ## Original Version (C# native version)
 1. Download the latest [release](https://github.com/Dev2Forge/Init-Venv/releases)
@@ -8,7 +12,6 @@
    - Add the installation directory to system PATH
 
 ---
-
 
 ## This (`pip install`)
 

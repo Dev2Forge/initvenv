@@ -1,28 +1,34 @@
-<h1 align="center">InitVenv <sub><sub><small><small>pypi version</small></small></sub></sub></h1>
+---
+# layout: home
+layout: page
+permalink: /
+title: Home
+---
+[Watch Posts](/posts)
+<h1>InitVenv<sub>
+    <small class="so-small text-info">pypi version</small>
+  </sub>
+</h1>
 
-<div align="center">
+<div class="align-center">
   <a href="https://github.com/Dev2Forge/Init-Venv/"><img src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@dd775fc24cf6c63171b85694bd0b7d567f055676/dev2forge/InitVenv/icon.ico" width="200"></a>
-</div>
-
-<!-- [Download](./view/download) - [About](./view/about) -->
-
-<div align="center">
-  <a href="./view/download">Download</a>
-  <a href="./view/about">About</a>
 </div>
 
 ---
 
-<a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/author-tutosrive-black?style=plastic"></a>
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/initvenv?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=GREEN&left_text=total+downloads)](https://pepy.tech/projects/initvenv)
-<img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/initvenv?label=pypi-dm">
-<img alt="PyPI - License" src="https://img.shields.io/pypi/l/initvenv">
-<img alt="SourceForge Downloads" src="https://img.shields.io/sourceforge/dt/init-venv?label=sourceforge.net">
-<img alt="PyPI - Version" src="https://img.shields.io/pypi/v/initvenv">
-<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/initvenv">
-<img alt="PyPI - Format" src="https://img.shields.io/pypi/format/initvenv">
-<img alt="PyPI - Status" src="https://img.shields.io/pypi/status/initvenv">
-<a href="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml"><img src="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml/badge.svg"/></a>
+{% comment %} Badges {% endcomment %}
+<article class="align-center badges-article">
+  <a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/author-tutosrive-black?style=plastic"></a>
+  <a href="https://pepy.tech/projects/initvenv"><img alt="Pypi Downloads" src="https://static.pepy.tech/personalized-badge/initvenv?period=total&units=INTERNATIONAL_SYSTEM&left_color=gray&right_color=blue&left_text=pypi"></a>
+  <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/initvenv?label=pypi-dm">
+  <img alt="PyPI - License" src="https://img.shields.io/pypi/l/initvenv">
+  <img alt="SourceForge Downloads" src="https://img.shields.io/sourceforge/dt/init-venv?label=sourceforge.net">
+  <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/initvenv">
+  <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/initvenv">
+  <img alt="PyPI - Format" src="https://img.shields.io/pypi/format/initvenv">
+  <img alt="PyPI - Status" src="https://img.shields.io/pypi/status/initvenv">
+  <a href="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml"><img src="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml/badge.svg" /></a>
+</article>
 
 > See original version: Download the latest [release](https://github.com/Dev2Forge/Init-Venv/releases)
 

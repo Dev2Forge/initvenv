@@ -1,13 +1,14 @@
-# About
+---
+layout: page
+title: About
+permalink: /about
+---
 
+## Contributors
 
-## Contribuitors
-
-<table align="center">
-  <tr>
-    <td><a href="https://github.com/tutosrive/"><img src="https://avatars.githubusercontent.com/tutosrive?v=4?s=100" width="100px;" alt="Tutos Rive Profile Github Logo"/><br /><sub><b>tutosrive</b></sub></a><br /><a href="https://github.com/Dev2Forge/Init-Venv/commits?author=tutosrive" title="Code">💻</a></td>
-  </tr>
-</table>
+<div class="center">
+  <a href="https://github.com/tutosrive/"><img src="https://avatars.githubusercontent.com/tutosrive?v=4?s=100" width="100px;" alt="Tutos Rive Profile Github Logo"/><br /><sub><b>tutosrive</b></sub></a><br /><a href="https://github.com/Dev2Forge/Init-Venv/commits?author=tutosrive" title="Code">💻</a>
+</div>
 
 ---
 

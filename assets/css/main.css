@@ -1,0 +1,32 @@
+@import url("style.css");
+@import url("404.css");
+
+.so-small {
+    font-size: 12px;
+}
+
+.text-info {
+    color: #17a2b8;
+}
+
+h1 {
+    text-align: center;
+}
+
+.align-center {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.badges-article {
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
