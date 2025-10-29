@@ -3,13 +3,14 @@ theme: minima
 
 title: Init Venv - Initialize Python Virtual Environments
 
+author:
+  name: Dev2Forge
+  email: support@dev2forge.software
+
 description: >
   Cross-language CLI tool written in C# to initialize Python virtual
   environments instantly with one command: 'initvenv'. Open Source - GPL-3.0
 
-author:
-  name: Dev2Forge
-  email: support@dev2forge.software
 
 # Project Variables
 url: "hhttps://www.dev2forge.software"
