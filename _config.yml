@@ -11,7 +11,7 @@ url: "https://www.dev2forge.software"
 baseurl: "/initvenv"
 
 # Analitycs
-# google_analytics: "G-74L9F7VNLD"
+google_analytics: "G-74L9F7VNLD"
 
 #
 # The `>` after `description:` means to ignore line-breaks until next key. If
