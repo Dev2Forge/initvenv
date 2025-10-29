@@ -1,8 +1,21 @@
-<h1 align="center">InitVenv</h1>
+<h1 align="center">InitVenv <sub><sub><small><small>pypi version</small></small></sub></sub></h1>
 
 <div align="center">
   <a href="https://github.com/Dev2Forge/Init-Venv/"><img src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@dd775fc24cf6c63171b85694bd0b7d567f055676/dev2forge/InitVenv/icon.ico" width="200"></a>
 </div>
+
+<a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/author-tutosrive-black?style=plastic"></a>
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/initvenv?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=GREEN&left_text=total+downloads)](https://pepy.tech/projects/initvenv)
+<img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/initvenv?label=pypi-dm">
+<img alt="PyPI - License" src="https://img.shields.io/pypi/l/initvenv">
+<img alt="SourceForge Downloads" src="https://img.shields.io/sourceforge/dt/init-venv?label=sourceforge.net">
+<img alt="PyPI - Version" src="https://img.shields.io/pypi/v/initvenv">
+<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/initvenv">
+<img alt="PyPI - Format" src="https://img.shields.io/pypi/format/initvenv">
+<img alt="PyPI - Status" src="https://img.shields.io/pypi/status/initvenv">
+<a href="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml"><img src="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml/badge.svg"/></a>
+
+> See original version: Download the latest [release](https://github.com/Dev2Forge/Init-Venv/releases)
 
 ## Table of Contents
 
@@ -10,6 +23,8 @@
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
+  - [Original Version (C# native version)](#original-version-c-native-version)
+  - [This (`pip install`)](#this-pip-install)
 - [Usage](#usage)
   - [Method 1: Windows File Explorer (Recommended)](#method-1-windows-file-explorer-recommended)
   - [Method 2: Command Line](#method-2-command-line)
@@ -19,6 +34,8 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Links](#links)
+  - [Pipy version](#pipy-version)
+  - [Original version](#original-version)
 - [Contributors](#contributors)
 
 **InitVenv** is a cross-platform automation tool that streamlines Python development workflow by automatically creating Python virtual environments, installing project dependencies from `requirements.txt`, and activating the environment with a single command execution. Currently supports Windows, with **Linux** and **macOS** support planned for future releases.
@@ -34,24 +51,38 @@
 ## Requirements
 
 - Python installed and added to system PATH
-- Windows operating system (currently Windows-only)
+- **Windows operating system** (_currently Windows-only_)
 
 ## Installation
 
+### Original Version (C# native version)
 1. Download the latest [release](https://github.com/Dev2Forge/Init-Venv/releases)
 2. Run the installer
 3. The installer will:
    - Copy `InitVenv-{architecture}.exe` and `InitVenv.bat` to your chosen directory
    - Add the installation directory to system PATH
 
+---
+
+
+### This (`pip install`)
+
+> Important: If you want the command to be available globally, you must install .__. in the global Python installation — that is, outside of virtual environments.
+
+1. open a CMD and write
+   ```shell
+    pip install initvenv
+   ```
+2. Cuando instale, ya puedes usarlo (Como dije anteriormente, esta version solo permite llamdados desde consola, nada de explorador de archivos de windows)
+
 ## Usage
 
 ### Method 1: Windows File Explorer (Recommended)
 
 > If you want to have full compatibility, please consider installing the original executable version.
+Download the latest [release](https://github.com/Dev2Forge/Init-Venv/releases)
 
-> Important: If you want the command to be available globally, you must install .__. in the global Python installation — that is, outside of virtual environments.
-
+---
 
 ### Method 2: Command Line
 
@@ -123,16 +154,26 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) 
 
 ## Links
 
-- [Download from SourceForge](https://sourceforge.net/projects/Init-Venv/)
-- [GitHub Releases](https://github.com/Dev2Forge/Init-Venv/releases)
+### Pipy version
+
+- [GitHub Home](https://github.com/Dev2Forge/initvenv/)
+- [Releases](https://github.com/Dev2Forge/initvenv/releases)
+- [Issues](https://github.com/Dev2Forge/initvenv/issues)
+- [Pull Requests](https://github.com/Dev2Forge/initvenv/pulls)
+
+### Original version
+
+- [GitHub Home](https://github.com/Dev2Forge/Init-Venv/)
+- [Releases](https://github.com/Dev2Forge/Init-Venv/releases)
 - [Issues](https://github.com/Dev2Forge/Init-Venv/issues)
 - [Pull Requests](https://github.com/Dev2Forge/Init-Venv/pulls)
+- [Download from SourceForge](https://sourceforge.net/projects/Init-Venv/)
 
 ## Contributors
 
 <table align="center">
   <tr>
-    <td align="center"><a href="https://github.com/usuario"><img src="https://avatars.githubusercontent.com/tutosrive?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tutosrive</b></sub></a><br /><a href="https://github.com/Dev2Forge/Init-Venv/commits?author=tutosrive" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/tutosrive/"><img src="https://avatars.githubusercontent.com/tutosrive?v=4?s=100" width="100px;" alt="Tutos Rive Profile Github Logo"/><br /><sub><b>tutosrive</b></sub></a><br /><a href="https://github.com/Dev2Forge/Init-Venv/commits?author=tutosrive" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -141,4 +182,4 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) 
 ⭐ If you find this tool useful, please consider giving it a star!
 
 
-![dev2forge](https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/dev2forge/thumbanil-dev2forge1.webp)
+<a href="https://github.com/Dev2Forge/"><img src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/dev2forge/thumbanil-dev2forge1.webp"/> </a>
