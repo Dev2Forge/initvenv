@@ -16,9 +16,9 @@
 <a href="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml"><img src="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml/badge.svg"/></a>
 
 
-<a href="https://www.dev2forge.software/initvenv/">
-  <h2>Init Venv Home (Website)</h2>
-</a>
+## [Init Venv Home (Website)](https://www.dev2forge.software/initvenv/)
+
+---
 
 ## Contributors
 
@@ -33,4 +33,8 @@
 ⭐ If you find this tool useful, please consider giving it a star!
 
 
-<a href="https://github.com/Dev2Forge/"><img src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/dev2forge/thumbanil-dev2forge1.webp"/> </a>
+<a href="https://github.com/Dev2Forge/">
+  <div align="center">
+    <img width="500" src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/dev2forge/thumbanil-dev2forge1.webp"/>
+  </div>
+</a>
