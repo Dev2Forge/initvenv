@@ -1,6 +1,16 @@
 # Configs
 theme: minima
 
+title: Init Venv - Initialize Python Virtual Environments
+
+description: >
+  Cross-language CLI tool written in C# to initialize Python virtual
+  environments instantly with one command: 'initvenv'. Open Source - GPL-3.0
+
+author:
+  name: Dev2Forge
+  email: support@dev2forge.software
+
 # Project Variables
 url: "hhttps://www.dev2forge.software"
 baseurl: "/initvenv"
@@ -9,17 +19,28 @@ AUTHOR: "Tutos Rive"
 FAVICON: "/assets/initvenv.ico"
 
 # Analitycs
-jekyll_analytics:
-  GoogleAnalytics:
-    id: "G-NJCY8HWJT2"
-    anonymizeIp: true
-    async: true
-
+google_analytics: "G-74L9F7VNLD"
 
 # Components variables
 ALT_PROFILE_TRG: "Github Phot Profile of Tutos Rive"
 IMG_PROFILE: "/assets/me1.jpeg"
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll_analytics
+ - jekyll-feed
+ - jekyll-seo-tag
+
+minima:
+  skin: auto
+
+social_links:
+    - title: Init Venv - Pypi Version
+      icon: github
+      url: "https://github.com/Dev2Forge/initvenv/"
+
+    - title: Init Venv - Native Version
+      icon: github
+      url: "https://github.com/Dev2Forge/Init-Venv/"
+
+    - title: Init Venv - Pypi Version
+      icon: python
+      url: "https://pypi.org/project/initvenv/"
