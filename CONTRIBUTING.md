@@ -95,7 +95,7 @@ By contributing, you agree that your work will be released under the project's l
 
 ## Getting Help
 
-- Check existing [Issues](https://github.com/Dev2Forge/Init-Venv/issues) for similar questions
+- Check existing [Issues](https://github.com/Dev2Forge/initvenv/issues) for similar questions
 - Join discussions in Pull Requests
 - Contact [@tutosrive](https://github.com/tutosrive) for project-specific questions
 
