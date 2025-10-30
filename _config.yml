@@ -9,8 +9,8 @@ author:
 url: "https://www.dev2forge.software"
 baseurl: "/initvenv"
 
-disqus:
-  shortname: init-venv
+# disqus:
+#   shortname: init-venv
 
 # Analytics
 google_analytics: "G-74L9F7VNLD"
