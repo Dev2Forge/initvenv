@@ -6,8 +6,11 @@ permalink: /view/howto
 
 ### Method 1: Windows File Explorer (Recommended)
 
-> If you want to have full compatibility, please consider installing the original executable version.
-Download the latest [release](https://github.com/Dev2Forge/Init-Venv/releases)
+For it to work, you must specify the path, either relative or absolute, that is:
+
+<div class="center">
+    <img src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@591ea68b0a5c28922df1cc9471fba52746db48e1/dev2forge/InitVenv/initvenv-explain-explorer1.png"/>
+</div>
 
 ---
 
