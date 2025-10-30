@@ -4,6 +4,12 @@ title: How to Use
 permalink: /view/howto
 ---
 
+In any case, you must have a requirements.txt file for PIP to detect the libraries. If you add the requirements.txt file after running `initvenv`, it won't have any effect. This is because at the time of [`initvenv`](https://github.com/Dev2Forge/Init-Venv/), it depends entirely on PIP commands, so when you run `pip check` without a requirements.txt file, it won't stop to search on its own. I will update this in a future version.
+
+Knowing this, the first step is to put a `requirements.txt` file in the working directory (You can safely omit it, then obviously you will have to use `pip install` — Again, if you don't add this —)
+
+---
+
 ### Method 1: Windows File Explorer (Recommended)
 
 For it to work, you must specify the path, either relative or absolute, that is:
