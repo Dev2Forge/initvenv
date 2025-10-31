@@ -5,7 +5,7 @@
 </div>
 
 <a href="https://github.com/tutosrive"><img alt="Static Badge" src="https://img.shields.io/badge/author-tutosrive-black?style=plastic"></a>
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/initvenv?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=GREEN&left_text=total+downloads)](https://pepy.tech/projects/initvenv)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/initvenv?period=total&units=NONE&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/initvenv)
 <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/initvenv?label=pypi-dm">
 <img alt="PyPI - License" src="https://img.shields.io/pypi/l/initvenv">
 <img alt="SourceForge Downloads" src="https://img.shields.io/sourceforge/dt/init-venv?label=sourceforge.net">
