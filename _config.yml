@@ -13,7 +13,8 @@ baseurl: "/initvenv"
 #   shortname: init-venv
 
 # Analytics
-google_analytics: "G-74L9F7VNLD"
+# google_analytics: "G-74L9F7VNLD"
+google_analytics: "G-5DQRS8Q87X"
 
 description: >-
   Cross-language CLI tool written in C# to initialize Python virtual
