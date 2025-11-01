@@ -15,7 +15,7 @@ permalink: /view/download
 
 ---
 
-## This (`pip install`)
+## `pip install`
 
 > Important: If you want the command to be available globally, you must install .__. in the global Python installation — that is, outside of virtual environments.
 
