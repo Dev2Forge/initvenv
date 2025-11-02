@@ -1,7 +1,7 @@
 @import url("style.css");
 @import url("404.css");
 
-button {
+.itch-download-btn {
     color: #0074ad;
     background-color: #fae45b;
     font-size: 21px;
@@ -10,7 +10,7 @@ button {
     cursor: pointer
 }
 
-button:hover {
+.itch-download-btn:hover {
     color: #ffffff;
     background-color: #00ccff;
 }

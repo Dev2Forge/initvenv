@@ -5,7 +5,7 @@ permalink: /view/download
 ---
 
 <div class="center">
-    <button type="button" name="itch-download-btn">Download Now!</button>
+    <button class="itch-download-btn" type="button">Download Now!</button>
 </div>
 
 <nav id="toc">
