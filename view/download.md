@@ -5,7 +5,8 @@ permalink: /view/download
 ---
 
 <div class="center">
-    <iframe frameborder="0" src="https://itch.io/embed/4005004?linkback=true&amp;border_width=5&amp;bg_color=1e1e1e&amp;fg_color=00c3e8&amp;link_color=fae45b&amp;border_color=1caefa" width="560" height="175"><a href="https://tutosrive.itch.io/initvenv">Init Venv - CLI Virtual Python Environments by tutosrive</a></iframe>
+    <!-- <iframe frameborder="0" src="https://itch.io/embed/4005004?linkback=true&amp;border_width=5&amp;bg_color=1e1e1e&amp;fg_color=00c3e8&amp;link_color=fae45b&amp;border_color=1caefa" width="560" height="175"><a href="https://tutosrive.itch.io/initvenv">Init Venv - CLI Virtual Python Environments by tutosrive</a></iframe> -->
+    <button id="download_button">Download InitVenv!</button>
 </div>
 
 <nav id="toc">
@@ -41,3 +42,12 @@ permalink: /view/download
     pip install initvenv
    ```
 2. Once installed, you can use it (As I said before, this version only allows calls from the console, not from Windows File Explorer)
+
+<script type="text/javascript" src="https://static.itch.io/api.js"></script>
+<script type="text/javascript">
+  Itch.attachBuyButton(document.getElementById("download_button"), {
+    // replace the following with the correct information about your game
+    user: "tutosrive",
+    game: "initvenv"
+  });
+</script>
