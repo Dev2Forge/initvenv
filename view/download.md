@@ -5,8 +5,7 @@ permalink: /view/download
 ---
 
 <div class="center">
-    <!-- <iframe frameborder="0" src="https://itch.io/embed/4005004?linkback=true&amp;border_width=5&amp;bg_color=1e1e1e&amp;fg_color=00c3e8&amp;link_color=fae45b&amp;border_color=1caefa" width="560" height="175"><a href="https://tutosrive.itch.io/initvenv">Init Venv - CLI Virtual Python Environments by tutosrive</a></iframe> -->
-    <button class="btn-itch-style" id="download_button">Download InitVenv!</button>
+    <button type="button" name="itch-download-btn">Download Now!</button>
 </div>
 
 <nav id="toc">

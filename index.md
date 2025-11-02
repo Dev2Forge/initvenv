@@ -1,14 +1,8 @@
 ---
 layout: home
-# layout: page
 permalink: /
-title: Home
+title: InitVenv - CLI tool
 ---
-
-<h1>InitVenv<sub>
-    <small class="so-small text-info">pypi version</small>
-  </sub>
-</h1>
 
 <div class="align-center">
   <a href="https://github.com/Dev2Forge/Init-Venv/"><img src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@dd775fc24cf6c63171b85694bd0b7d567f055676/dev2forge/InitVenv/icon.ico" width="200"></a>
@@ -29,8 +23,6 @@ title: Home
   <img alt="PyPI - Status" src="https://img.shields.io/pypi/status/initvenv">
   <a href="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml"><img src="https://github.com/Dev2Forge/initvenv/actions/workflows/build-and-publish-wheels.yml/badge.svg" /></a>
 </article>
-
-> See original version: Download the latest [release](https://github.com/Dev2Forge/Init-Venv/releases)
 
 ## Table of Contents
 

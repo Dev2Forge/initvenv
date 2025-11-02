@@ -1,9 +1,18 @@
 @import url("style.css");
 @import url("404.css");
 
-.btn-itch-style {
-  border-radius: 20px;
-  border: 3px solid #fae45b;
+button {
+    color: #0074ad;
+    background-color: #fae45b;
+    font-size: 21px;
+    border: 2px solid #00b3ff;
+    padding: 15px 50px;
+    cursor: pointer
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #00ccff;
 }
 
 .so-small {
