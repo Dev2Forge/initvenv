@@ -51,7 +51,3 @@ title: InitVenv - CLI tool
 - The `requirements.txt` file must contain the dependencies **before** running InitVenv
 - The program will not understand requirements once the virtual environment is created
 - Currently supports Windows systems only
-
----
-
-<div class="giscus"></div>
