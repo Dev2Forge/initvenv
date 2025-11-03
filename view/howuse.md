@@ -60,3 +60,7 @@ When you run `initvenv`, it:
 3. Activates the virtual environment
 4. Installs packages from `requirements.txt` (if present)
 5. Keeps the terminal open for continued work
+
+---
+
+<div class="giscus"></div>
