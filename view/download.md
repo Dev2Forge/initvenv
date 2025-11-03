@@ -50,3 +50,7 @@ permalink: /view/download
     game: "initvenv"
   });
 </script>
+
+---
+
+<div class="giscus"></div>
