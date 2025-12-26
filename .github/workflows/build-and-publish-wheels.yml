@@ -81,6 +81,16 @@ jobs:
             echo "✓ src/initvenv/bin/${{ matrix.folder }}/initvenv found"
           fi
 
+          # Clean any previous initvenv in scripts
+          if [ -f "src/initvenv/scripts/initvenv" ]; then
+            rm -f "src/initvenv/scripts/initvenv"
+            echo "Removed previous initvenv in src/initvenv/scripts"
+          fi
+
+          echo "Copying binary from src/initvenv/bin/${{ matrix.folder }}"
+          cp "src/initvenv/bin/${{ matrix.folder }}/initvenv" "src/initvenv/scripts/initvenv"
+          echo "✓ Copied initvenv to src/initvenv/scripts/initvenv"
+
       - name: Install build tools
         run: |
           python -m pip install --upgrade pip
