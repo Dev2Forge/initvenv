@@ -89,7 +89,8 @@ jobs:
 
           echo "Copying binary from src/initvenv/bin/${{ matrix.folder }}"
           cp "src/initvenv/bin/${{ matrix.folder }}/initvenv" "src/initvenv/scripts/initvenv"
-          echo "✓ Copied initvenv to src/initvenv/scripts/initvenv"
+          chmod +x "src/initvenv/scripts/initvenv"
+          echo "✓ Copied and set executable initvenv to src/initvenv/scripts/initvenv"
 
       - name: Install build tools
         run: |
