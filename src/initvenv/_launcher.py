@@ -78,7 +78,7 @@ def main():
 
         pkg_root = Path(__file__).resolve().parent
         bin_dir = pkg_root / "bin" / f"linux-{arch}"
-        binary = bin_dir / "initVenv"
+        binary = bin_dir / "initvenv"
 
         if not binary.exists():
             print(f"Error: Binary not found at {binary}", file=sys.stderr)

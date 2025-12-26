@@ -52,7 +52,7 @@ package-dir = {"" = "src"}
 packages = { find = { where = ["src"] } }
 
 [tool.setuptools.package-data]
-initvenv = ["scripts/*"]
+initvenv = ["scripts/*", "bin/**/*"]
 
 [project.scripts]
 initvenv = "initvenv._launcher:main"
