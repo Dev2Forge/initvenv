@@ -25,11 +25,11 @@ jobs:
             runner: windows-latest
             shell: cmd
           - folder: linux-x64
-            plat_tag: linux_x86_64
+            plat_tag: manylinux_2_17_x86_64
             runner: ubuntu-latest
             shell: bash
           - folder: linux-arm64
-            plat_tag: linux_aarch64
+            plat_tag: manylinux_2_17_aarch64
             runner: ubuntu-latest
             shell: bash
 
