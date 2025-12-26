@@ -25,11 +25,11 @@ jobs:
             runner: windows-latest
             shell: cmd
           - folder: linux-x64
-            plat_tag: linux_x86_64
+            plat_tag: manylinux_2_17_x86_64
             runner: ubuntu-latest
             shell: bash
           - folder: linux-arm64
-            plat_tag: linux_aarch64
+            plat_tag: manylinux_2_17_aarch64
             runner: ubuntu-latest
             shell: bash
 
@@ -89,7 +89,8 @@ jobs:
 
           echo "Copying binary from src/initvenv/bin/${{ matrix.folder }}"
           cp "src/initvenv/bin/${{ matrix.folder }}/initvenv" "src/initvenv/scripts/initvenv"
-          echo "✓ Copied initvenv to src/initvenv/scripts/initvenv"
+          chmod +x "src/initvenv/scripts/initvenv"
+          echo "✓ Copied and set executable initvenv to src/initvenv/scripts/initvenv"
 
       - name: Install build tools
         run: |
