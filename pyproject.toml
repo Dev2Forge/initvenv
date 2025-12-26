@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "initvenv"
-version = "0.2.0a1"
+version = "0.2.0a2"
 description = "Cross-language CLI tool written in C# to initialize Python virtual environments instantly with one command: 'initvenv'."
 readme = { file = "README.md", content-type = "text/markdown", charset = "utf-8" }
 license = "GPL-3.0"
@@ -52,7 +52,7 @@ package-dir = {"" = "src"}
 packages = { find = { where = ["src"] } }
 
 [tool.setuptools.package-data]
-initvenv = ["scripts/*", "bin/**/*"]
+initvenv = ["scripts/*"]
 
 [project.scripts]
 initvenv = "initvenv._launcher:main"
