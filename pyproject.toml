@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "initvenv"
-version = "0.2.0a2"
+version = "0.2.0a3"
 description = "Cross-language CLI tool written in C# to initialize Python virtual environments instantly with one command: 'initvenv'."
 readme = { file = "README.md", content-type = "text/markdown", charset = "utf-8" }
 license = "GPL-3.0"
