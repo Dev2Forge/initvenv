@@ -74,11 +74,11 @@ jobs:
         shell: bash
         run: |
           echo "Verifying binary in src/initvenv/bin/${{ matrix.folder }}"
-          if [ ! -f "src/initvenv/bin/${{ matrix.folder }}/initVenv" ]; then
-            echo "Error: src/initvenv/bin/${{ matrix.folder }}/initVenv not found"
+          if [ ! -f "src/initvenv/bin/${{ matrix.folder }}/initvenv" ]; then
+            echo "Error: src/initvenv/bin/${{ matrix.folder }}/initvenv not found"
             exit 1
           else
-            echo "✓ src/initvenv/bin/${{ matrix.folder }}/initVenv found"
+            echo "✓ src/initvenv/bin/${{ matrix.folder }}/initvenv found"
           fi
 
           # Clean any previous initvenv in scripts
@@ -88,8 +88,8 @@ jobs:
           fi
 
           echo "Copying binary from src/initvenv/bin/${{ matrix.folder }}"
-          cp "src/initvenv/bin/${{ matrix.folder }}/initVenv" "src/initvenv/scripts/initvenv"
-          echo "✓ Copied initVenv to src/initvenv/scripts/initvenv"
+          cp "src/initvenv/bin/${{ matrix.folder }}/initvenv" "src/initvenv/scripts/initvenv"
+          echo "✓ Copied initvenv to src/initvenv/scripts/initvenv"
 
       - name: Install build tools
         run: |
