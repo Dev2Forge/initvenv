@@ -8,16 +8,30 @@ on:
 jobs:
   build-and-publish:
     name: Build wheel for ${{ matrix.folder }}
-    runs-on: windows-latest
+    runs-on: ${{ matrix.runner }}
     strategy:
       matrix:
         include:
           - folder: win-x86
             plat_tag: win32
+            runner: windows-latest
+            shell: cmd
           - folder: win-x64
             plat_tag: win_amd64
+            runner: windows-latest
+            shell: cmd
           - folder: win-arm64
             plat_tag: win_arm64
+            runner: windows-latest
+            shell: cmd
+          - folder: linux-x64
+            plat_tag: linux_x86_64
+            runner: ubuntu-latest
+            shell: bash
+          - folder: linux-arm64
+            plat_tag: linux_aarch64
+            runner: ubuntu-latest
+            shell: bash
 
     steps:
       - name: Checkout
@@ -28,7 +42,8 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Prepare scripts directory
+      - name: Prepare scripts directory (Windows)
+        if: matrix.runner == 'windows-latest'
         shell: cmd
         run: |
           echo Verificando archivo .bat en src\initvenv\scripts...
@@ -53,6 +68,28 @@ jobs:
             echo Error: no se encontró src\initvenv\bin\${{ matrix.folder }}\initvenv.exe
             exit 1
           )
+
+      - name: Prepare scripts directory (Linux)
+        if: matrix.runner == 'ubuntu-latest'
+        shell: bash
+        run: |
+          echo "Verifying binary in src/initvenv/bin/${{ matrix.folder }}"
+          if [ ! -f "src/initvenv/bin/${{ matrix.folder }}/initVenv" ]; then
+            echo "Error: src/initvenv/bin/${{ matrix.folder }}/initVenv not found"
+            exit 1
+          else
+            echo "✓ src/initvenv/bin/${{ matrix.folder }}/initVenv found"
+          fi
+
+          # Clean any previous initvenv in scripts
+          if [ -f "src/initvenv/scripts/initvenv" ]; then
+            rm -f "src/initvenv/scripts/initvenv"
+            echo "Removed previous initvenv in src/initvenv/scripts"
+          fi
+
+          echo "Copying binary from src/initvenv/bin/${{ matrix.folder }}"
+          cp "src/initvenv/bin/${{ matrix.folder }}/initVenv" "src/initvenv/scripts/initvenv"
+          echo "✓ Copied initVenv to src/initvenv/scripts/initvenv"
 
       - name: Install build tools
         run: |
